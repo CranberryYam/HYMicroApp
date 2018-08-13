@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HYMicroApp_Example' do
+  pod 'HYMicroApp', :path => '../'
+
+  target 'HYMicroApp_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
