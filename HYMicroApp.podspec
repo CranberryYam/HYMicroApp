@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source_files = 'HYMicroApp/Classes/**/*'
   
   s.resource_bundles = {
-      'HYMicroApp' => ['HYMicroApp/**/*.xib', 'HYMicroApp/Assets/x.png']
+      'HYMicroApp' => ['HYMicroApp/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
