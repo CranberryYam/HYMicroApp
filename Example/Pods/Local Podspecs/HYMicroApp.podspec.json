@@ -1,0 +1,32 @@
+{
+  "name": "HYMicroApp",
+  "version": "0.1.0",
+  "summary": "MicroApp, which is for Hybrid App.",
+  "homepage": "https://github.com/CranberryYam/HYMicroApp",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CranberryYam": "1113145615yihl@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/CranberryYam/HYMicroApp.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "HYMicroApp/Classes/**/*",
+  "resource_bundles": {
+    "HYMicroApp": [
+      "HYMicroApp/**/*.xib",
+      "HYMicroApp/Assets/x.png"
+    ]
+  },
+  "dependencies": {
+    "VasSonic": [
+      "3.0.0"
+    ]
+  }
+}

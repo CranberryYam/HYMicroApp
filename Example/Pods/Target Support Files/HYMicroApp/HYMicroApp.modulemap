@@ -1,0 +1,6 @@
+framework module HYMicroApp {
+  umbrella header "HYMicroApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

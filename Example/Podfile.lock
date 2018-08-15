@@ -1,0 +1,23 @@
+PODS:
+  - HYMicroApp (0.1.0):
+    - VasSonic (= 3.0.0)
+  - VasSonic (3.0.0)
+
+DEPENDENCIES:
+  - HYMicroApp (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - VasSonic
+
+EXTERNAL SOURCES:
+  HYMicroApp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HYMicroApp: 3bae5cb1ba2d151fc711c79bbb80cdd88e504d22
+  VasSonic: 681ec95418d485d8c501d13549e25dff18754893
+
+PODFILE CHECKSUM: 443aee30d58e4497294125c9ec3cac2416b6cb24
+
+COCOAPODS: 1.5.3

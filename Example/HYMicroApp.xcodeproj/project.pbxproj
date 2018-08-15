@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		80D98C9121223B2300BD6649 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D98C9021223B2300BD6649 /* TableController.swift */; };
 		BE8A6BBEF6BB9B93C2B1C27B /* Pods_HYMicroApp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2577DE1DDDF2A7A69C6C98 /* Pods_HYMicroApp_Example.framework */; };
 		E3E248BA643B0C5A1C1ED72D /* Pods_HYMicroApp_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FDE536B6EF4B5598B4C987 /* Pods_HYMicroApp_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -42,10 +43,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		71A9B274A2D8010AAA4C52AA /* Pods-HYMicroApp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYMicroApp_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYMicroApp_Tests/Pods-HYMicroApp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78FDE536B6EF4B5598B4C987 /* Pods_HYMicroApp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYMicroApp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D98C9021223B2300BD6649 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		AAAFA1F1504116F1AD8FA735 /* Pods-HYMicroApp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYMicroApp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYMicroApp_Example/Pods-HYMicroApp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B1BC480E1F3C6C135C183FD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B32E5A2E6C0184E393DE6398 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B4C288A8995349F93D22163B /* HYMicroApp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HYMicroApp.podspec; path = ../HYMicroApp.podspec; sourceTree = "<group>"; };
+		B1BC480E1F3C6C135C183FD0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B32E5A2E6C0184E393DE6398 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B4C288A8995349F93D22163B /* HYMicroApp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HYMicroApp.podspec; path = ../HYMicroApp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DB2577DE1DDDF2A7A69C6C98 /* Pods_HYMicroApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYMicroApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				80D98C9021223B2300BD6649 /* TableController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -212,6 +215,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7P3926LM3S;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -269,10 +273,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HYMicroApp_Example/Pods-HYMicroApp_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HYMicroApp/HYMicroApp.framework",
+				"${BUILT_PRODUCTS_DIR}/VasSonic/VasSonic.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HYMicroApp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VasSonic.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D98C9121223B2300BD6649 /* TableController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -469,6 +476,7 @@
 			baseConfigurationReference = 5EABD0FC46786992F3E3CC2D /* Pods-HYMicroApp_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
 				INFOPLIST_FILE = HYMicroApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +492,7 @@
 			baseConfigurationReference = AAAFA1F1504116F1AD8FA735 /* Pods-HYMicroApp_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7P3926LM3S;
 				INFOPLIST_FILE = HYMicroApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
